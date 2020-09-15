@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<title>Course Project</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
+</style>
+
+<body class="w3-light-grey">
+
+<!-- Navigation bar with social media icons -->
+<div class="w3-bar w3-black w3-hide-small">
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-snapchat"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-flickr"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+</div>
+
+<!-- w3-content defines a container for fixed `size centered content,
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1600px">
+
+  <!-- Header -->
+  <header class="w3-container w3-center w3-padding-48 w3-white">
+    <h1 class="w3-xxxlarge"><b>PAWS FOR LIFE</b></h1>
+    <h6>Welcome to the world of <span class="w3-tag">PETS</span></h6>
+  </header>
+
+  <!-- Image header -->
+  <header class="w3-display-container w3-wide" id="home">
+    <img class="w3-image" src="doghome.jpg" alt="Rescued pet" width="1600" height="1060">
+    <div class="w3-display-left w3-padding-large">
+      <h1 class="w3-jumbo w3-text-white w3-hide-small"><b>PAWS FOR LIFE</b></h1>
+      <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="document.getElementById('volunteer').style.display='block'">VOLUNTEER</button></h6>
+      <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="document.getElementById('donate').style.display='block'">DONATE</button></h6>
+      <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="document.getElementById('adopt').style.display='block'">ADOPT</button></h6>
+    </div>
+  </header>
+
+  <!-- Grid -->
+  <div class="w3-row w3-padding w3-border">
+
+    <!-- Blog entries -->
+    <div class="w3-col l8 s12">
+
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>RESCUE CLUB</h3>
+        </div>
+        <div class="w3-justify">
+          <img src="download7.jpg" alt="Recued Pet" style="width:70%" class="w3-padding-16">
+          <p><strong>More LOVE!</strong> </p>
+          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
+            <hr>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>Save a life</h3>
+          <h5>Fill your home with unconditional love by adopting a dog. <span class="w3-opacity"></span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="rescued.jpg" alt="Recued" style="width:70%" class="w3-padding-16">
+          <p><strong>How does it work to adopt a pet?</strong></p>
+          <p>If you’ve never adopted a pet before, you may be wondering, how does the process work? How long does it take? How much does it cost? Here is some information:You find a pet you want to adopt on pawsforlife.com who’s at a shelter.
+You go to the shelter and see the pet. He’s adorable! You ask at the shelter desk and they have a staff or volunteer take him out so you can meet with him. You fall in love. </p>
+        </div>
+      </div>
+
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>Life of dogs before rescue.</h3>
+          <h5>What do dogs go through before rescue?</h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="baf1.jpg" alt="DOG before and after" style="width:70%" class="w3-padding-16">
+          <p><strong>Depression in dogs.</strong></p>
+          <p>Animal shelters and rescue centers around the world have put countless volunteer hours into helping abused and homeless animals like these find loving homes. Animals on the street, especially if they are of a showier breed that needs regular hygienic care, lead very difficult lives. This day is a great opportunity to donate to your nearest animal shelter/rescue center and, if you’re looking for a new furry companion, to adopt a pet that needs your love and care.</p>
+        </div>
+      </div>
+
+      <!-- Volunteer Modal -->
+      <div id="volunteer" class="w3-modal w3-animate-opacity">
+        <div class="w3-modal-content" style="padding:32px">
+          <div class="w3-container w3-white">
+            <i onclick="document.getElementById('volunteer').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+            <h2 class="w3-wide">VOLUNTEER</h2>
+            <p>If you want to volunteer for our rescue shelter, enter your email id and wait for our reply.</p>
+            <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+            <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('volunteer').style.display='none'">Volunteer</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Adopt Modal -->
+      <div id="adopt" class="w3-modal w3-animate-opacity">
+        <div class="w3-modal-content" style="padding:32px">
+          <div class="w3-container w3-white">
+            <i onclick="document.getElementById('adopt').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+            <h2 class="w3-wide">ADOPT</h2>
+            <p>If you want to foster or adopt a pet from our rescue: </p>
+            <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+    
+				<div class="dropdown">
+				<button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">Breeds of dogs
+					<span class="caret"></span></button>
+					<ul class="dropdown-menu">
+					<li><a href="#">German Shephard</a></li>
+					<li><a href="#">Tibetian Mastiff</a></li>
+					<li><a href="#">Labrodor</a></li>
+					<li><a href="#">Pomeranian</a></li>
+					<li><a href="#">Stray dogs</a></li>
+					<li><a href="#">Rottweiler</a></li>
+					<li><a href="#">American Bull</a></li>
+					<li><a href="#">Pit Bull</a></li>
+					<li><a href="#">Pug</a></li>
+				</ul>
+				</div>
+			
+			<br>
+            <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('adopt').style.display='none'">Adopt</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Donate Modal -->
+	  <form name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate>
+      <div id="donate" class="w3-modal w3-animate-opacity">
+        <div class="w3-modal-content" style="padding:32px">
+          <div class="w3-container w3-white">
+            <i onclick="document.getElementById('donate').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+            <h2 class="w3-wide">DONATE</h2>
+            <p>If you want to donate please enter email and amount you want to enter:.</p>
+            <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+            <label>Donate Amount:</label>
+			<input type="text" class="form-control" name="pwd1" />  
+            <label>Confirm Amount Donated:</label>&nbsp;&nbsp;
+			<input type="text" class="form-control" name="pwd2"/> 	
+            <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="checkPass()">Donate</button>
+          </div>
+        </div>
+      </div>
+	  </form>
+	
+      <!-- Footer -->
+      <footer class="w3-container w3-dark-grey" style="padding:32px">
+        <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+      </footer>
+	
+      <script>
+	  function checkPass(){  
+			
+		var firpwd=document.userForm.pwd1.value;  
+		var secpwd=document.userForm.pwd2.value;  
+
+
+		if(firpwd != "" || secpwd != ""){
+			if(firpwd==secpwd){  
+				alert("Fn checkPass: Amount matched!");
+				return true;  
+			}  
+			else{  
+				alert("Fn checkPass: Amount entered must be same!");  
+				return false;  
+			}  
+		}
+		alert("Field should not be blank");
+		return false;
+} 
+</script>
+</body>
+</html>
